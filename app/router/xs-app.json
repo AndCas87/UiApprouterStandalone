@@ -1,0 +1,11 @@
+{
+  "welcomeFile": "/bookbooksui",
+  "routes": [
+    {
+      "source": "^/dest_int/(.*)$",
+      "target": "$1",
+      "destination": "srv-api",
+      "authenticationType": "xsuaa"
+    }
+  ]
+}

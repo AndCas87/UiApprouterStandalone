@@ -1,0 +1,36 @@
+<mvc:View controllerName="book.booksui.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <content>
+         <Table id="idTable" items="{modelBooks>/Books}">
+            <headerToolbar>
+                <OverflowToolbar>
+                    <content>
+                    <ToolbarSpacer/>
+                        <Button id="idCreate" 
+                            text="Create"
+                            press="onNavToCreate" />
+                    </content>
+                </OverflowToolbar>
+            </headerToolbar>
+            <columns>
+                <Column >
+                    <Text text="Title" />
+                </Column>
+                <Column >
+                    <Text text="Descrptioin" />
+                </Column>
+            </columns>
+            <items >
+                <ColumnListItem vAlign="Middle" type="Navigation" press="onSelRow">
+                    <cells>
+                        <Text text="{modelBooks>title}"/>
+                        <Text text="{modelBooks>ID}"/>
+                    </cells>
+                </ColumnListItem>
+            </items>
+	</Table>
+    </content>
+    </Page>
+</mvc:View>

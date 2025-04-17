@@ -1,0 +1,14 @@
+{
+    "sql": {
+        "native_hana_associations": false
+    },
+    "requires": {
+        "destinations": true,
+        "connectivity": true,
+        "auth": "xsuaa",
+        "approuter": {
+            "kind": "cloudfoundry"
+        },
+        "db": "hana"
+    }
+}
